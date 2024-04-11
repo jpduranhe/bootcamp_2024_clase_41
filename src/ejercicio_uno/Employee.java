@@ -1,6 +1,6 @@
 package ejercicio_uno;
 
-public class Employee {
+public abstract class Employee {
 
 	private String name;
 	private int age;
@@ -26,5 +26,12 @@ public class Employee {
 	public void setAge(int age) {
 		this.age = age;
 	}
+
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", age=" + age + "]";
+	}
+	
+	
 
 }
